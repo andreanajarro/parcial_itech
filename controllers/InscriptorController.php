@@ -52,7 +52,7 @@ class InscriptorController {
 
             // 3. AUDITORIA DE INTEGRIDAD Y FIRMA DE DATOS (Punto 20)
             // Concatenamos las variables criticas solicitadas por la rubrica (Nombre, Identificacion, Correo, Teléfono, Sexo)
-            $cadena_auditoria = $nombre . $identidad . $correo . $celular . $sexo;
+            $cadena_auditoria = $nombre . $apellido . $correo . $celular . $sexo;
             
             // Generamos una firma criptografica unica usando un algoritmo HMAC SHA256 con una clave secreta del sistema
             $hash_verificacion = hash_hmac('sha256', $cadena_auditoria, 'clave_secreta_itech_2026');

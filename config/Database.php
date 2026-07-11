@@ -1,7 +1,7 @@
 <?php
 class Database {
     // Definicion de las credenciales de acuerdo al entorno local (WampServer)
-    private $host = "127.1.1.1"; // La IP local que especifica tu examen
+    private $host = "127.1.1.1"; // La IP local que especifica 
     private $db_name = "parcial_itech"; // El nombre de la base de datos 
     private $username = "root";
     private $password = ""; // Por defecto password esta vacio
